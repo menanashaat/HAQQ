@@ -1,0 +1,38 @@
+//Gradients
+//Corporate/Main palette
+@mixin gradient1() {
+  background: linear-gradient(to right, #95cd39 0%, #6dbd45 100%);
+}
+@mixin gradient2() {
+  background: linear-gradient(to right, #95cd39 0%, #cbdb2a 100%);
+}
+@mixin gradient3() {
+  background: linear-gradient(90deg, #6dbd45 19.27%, #95cd39 100%);
+}
+
+//Buttons
+@mixin button_hovered() {
+  background: linear-gradient(90deg, #8dc236 0%, #68b441 100%);
+}
+@mixin button_active() {
+  background: linear-gradient(90deg, #85b833 0%, #64ab3d 100%);
+}
+
+/* Define a mixin for the border-radius  */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin main-shadow() {
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin page-container() {
+  max-width: $content-width;
+  margin: 0 auto;
+  min-height: 65vh;
+}
